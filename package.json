@@ -1,0 +1,24 @@
+{
+  "name": "rust-cli",
+  "version": "0.0.1",
+  "description": "rust-lang cli",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "lsc -cbp bin/rust.ls > bin/rust.js; lsc -bc lib/commands; lsc -bc lib/commands.ls",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "rust": "./bin/rust.js"
+  },
+  "keywords": [
+    "rust"
+  ],
+  "author": "iamblue",
+  "license": "ISC",
+  "dependencies": {
+    "cliopt": "0.0.5",
+    "node-watch": "^0.3.4",
+    "process": "^0.9.0",
+    "youmeb-generator": "0.0.1"
+  }
+}
